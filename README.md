@@ -11,6 +11,7 @@ If your frames reach the server it will send ACK signal to client
 Stop the Program
 PROGRAM
 Server.py
+```
 import socket
 
 s = socket.socket()
@@ -30,7 +31,9 @@ while True:
     conn.send("ACK".encode())
 
 conn.close()
+```
 client.py
+```
 import socket
 
 s = socket.socket()
@@ -46,6 +49,7 @@ for i in range(n):
     print("Received:", ack)
 
 s.close()
+```
 OUTPUT
 imageimage
 RESULT
